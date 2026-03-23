@@ -218,7 +218,11 @@
   margin-bottom: 18px;
 }
 
-.otp-resend-text {
+.otp-resend-button:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.otp-resend-button {
   font-family: 'Montserrat', system-ui, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -226,6 +230,15 @@
   line-height: 17px;
   text-align: right;
   color: rgba(0, 0, 0, 0.6);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.otp-resend-underlined {
+  text-decoration: underline;
 }
 
 .otp-verify-button {

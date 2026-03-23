@@ -94,8 +94,8 @@ function OtpVerification() {
         <div className="otp-form-wrapper">
           <h2 className="otp-title">OTP Verification</h2>
           <p className="otp-subtitle">
-            Please enter the OTP (One-Time Password) sent to your registered email (je.de@gl.c*m) to complete your
-            verification.
+            Please enter the OTP (One-Time Password) sent to your registered email <strong>(je.de@gl.c*m)</strong> to
+            complete your verification.
           </p>
 
           <form className="otp-form" onSubmit={handleSubmit}>
@@ -119,7 +119,9 @@ function OtpVerification() {
             </div>
 
             <div className="otp-resend-row">
-              <span className="otp-resend-text">Didn't got the code? Resend in 30s</span>
+              <button type="button" className="otp-resend-button">
+                Didn't got the code? <span className="otp-resend-underlined">Resend in 30s</span>
+              </button>
             </div>
 
             <button type="submit" className="otp-verify-button">
