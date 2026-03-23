@@ -466,6 +466,10 @@
 @media (max-width: 768px) {
   .login-page {
     flex-direction: column;
+    /* Allow scrolling on small screens (design was previously locked with overflow hidden). */
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
   }
 
   .login-left {
@@ -478,11 +482,18 @@
     align-items: flex-start;
   }
 
-  .login-left-header,
-  .login-left-text {
+  .login-left-header {
     left: 24px;
     right: 24px;
     width: auto;
+  }
+
+  .login-left-text {
+    left: 50%;
+    right: auto;
+    top: 55%;
+    width: auto;
+    transform: translate(-50%, -50%);
   }
 
   .login-left-title {

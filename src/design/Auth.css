@@ -135,6 +135,18 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .auth-page {
+    /* Allow the login/register panels to scroll on phones */
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .auth-login-overlay {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
   .auth-signup-inner {
     flex-direction: column;
   }
@@ -151,6 +163,10 @@
   .auth-login-left-panel {
     flex: 0 0 auto;
     min-height: 40vh;
+  }
+
+  .auth-login-form-panel {
+    min-height: auto;
   }
 
   .auth-login-overlay.auth-login-signup .auth-login-left-panel {
